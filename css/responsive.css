@@ -1,0 +1,88 @@
+@media (max-width: 1024px){
+
+    /* ABAIXO ESTOU ESCONDENDO O MEU MENU DESKTOP PARA QUE NÃO APAREÇA NA VERSÃO MOBILE */
+
+    .menu-desktop{
+        display: none;
+    }
+
+    /* ICONE DO MENU HAMBURGUER FEITO NO CSS */
+
+    .icon{
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        z-index: 9999;
+    }
+
+    .p-1{
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    .p-2{
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    .p-3{
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    /* ICONE HAMBURGUER VIRA UM X */
+
+    .icon-x .p-1{  
+        transform: rotate(45deg) translate(5px, 7px);
+    }    
+
+    .icon-x .p-2{    
+        opacity: 0;
+    }
+
+    .icon-x .p-3{      
+        transform: rotate(-45deg) translate(2px, -6px);
+    }
+
+    /* AQUI É O ESTILO DO MEU MENU MOBILE */
+
+    .menu-mobile{
+        position: absolute;
+        left: -100rem;
+        top: 0;
+
+        background: #0a0a0a;
+        width: 40%;
+        height: 100vh;        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        transition: .4s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .menu-mobile li+li{
+        margin-top: 30px;
+    }
+
+    .menu-mobile a{
+        color: white;
+    }
+
+    .ativo.menu-mobile{
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+    } 
+}

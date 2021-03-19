@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+   background: #1B0437; 
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    padding: 20px 0;
+    background: #0a0a0a;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logomarca a{
+    color: white;
+    font-size: 3.0rem;
+}
+
+.menu-desktop ul{
+    display: flex;
+}
+
+.menu-desktop  li+li{
+    margin-left: 30px;
+}
+
+.menu-desktop  a{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 300;
+}
+
+.icon{
+    display: none;
+}
+
+/* NESTA PÁGINA EU COLOQUEI APENAS OS ESTILOS DO MENU DESKTOP E O CODIGO ABAIXO SERVE PARA ESCONDER O MENU MOBILE QUANDO O SITE FOR MAIOR QUE 1024px. A VERSÃO DE MENU MOBILE ESTÁ NO ARQUIVO RESPONSIVE.CSS */
+
+@media screen and (min-width: 1024px){
+    .menu-mobile{
+        display: none;
+    }
+}
+
+
